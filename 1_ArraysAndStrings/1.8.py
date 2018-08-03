@@ -47,3 +47,9 @@ def zeroMatrix(matrix):
 assert zeroMatrix([[1,1,1],[1,1,1],[1,1,1]]) == [[1,1,1],[1,1,1],[1,1,1]]
 assert zeroMatrix([[0,0,1],[0,1,0],[0,0,1]]) == [[0,0,0],[0,0,0],[0,0,0]]
 assert zeroMatrix([[0,0,1],[0,1,1],[1,1,1]]) == [[0,0,0],[0,0,0],[0,0,1]]
+
+
+# Note: You can reduce the space to O(1) by using the first null column,
+# row as a 'sentinel' to storing values instead of making a new array
+
+# TODO: Implement this

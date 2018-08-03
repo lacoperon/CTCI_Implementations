@@ -17,6 +17,8 @@ def compressString(input):
             if currentLetter:
                 # The letter has changed; add currentLetter + count to comp_str
                 comp_str += "{}{}".format(currentLetter, letterFreq)
+                if len(comp_str) > input:
+                    break
             currentLetter = letter
             letterFreq = 0
         letterFreq += 1
@@ -31,3 +33,6 @@ def compressString(input):
 
 assert compressString("aabcccccaaa") == "a2b1c5a3"
 assert compressString("abcba") == "abcba"
+
+# Time  Complexity: O(N)
+# Space Complexity: O(N) at most

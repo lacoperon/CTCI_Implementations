@@ -16,7 +16,7 @@ def isUniqueChars(input):
             charSet.add(char)
     return True
 
-# Time  Complexity: O(N)
+# Time  Complexity: O(min(N,C))
 # Space Complexity: O(K), in which K is the number of unique chars in input
 
 # Attempt 2 : Implementation only using arrays

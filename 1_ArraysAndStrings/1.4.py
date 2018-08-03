@@ -19,6 +19,9 @@ def isPalinPermute(input):
     # A palindrome necessarily has only one, or exactly zero, of these letters
     return len(letterSet) in [0,1]
 
+# Time  Complexity: O(N)
+# Space Complexity: O(K), where K is the number of characters
+
 assert isPalinPermute("Taco Cat")
 assert isPalinPermute("A man a plan a canal Panama")
 assert isPalinPermute("")
