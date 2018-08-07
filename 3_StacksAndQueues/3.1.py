@@ -4,7 +4,7 @@ class StupidArrayStack:
         self.array = (num_stacks * stack_length) * [None]
         self.top_index = [i * stack_length for i in range(num_stacks)]
         self.stack_length = stack_length
-        
+            
     def pop(self, stack_num):
         top_index = self.top_index[stack_num]
         top = self.array[top_index]
